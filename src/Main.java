@@ -3,7 +3,7 @@ import java.io.*;
 public class Main {
     public static void main(String[] args) {
 
-        Cat cat = new Cat("Garfield", 8, 5);
+        Cat cat = new Cat("Garfield", 8, 9);
         try(ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("cat.dat"))){
             oos.writeObject(cat);
         } catch (IOException e) {
